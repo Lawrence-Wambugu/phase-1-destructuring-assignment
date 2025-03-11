@@ -1,6 +1,6 @@
 const farmAnimals = 'cow horse sheep pig chicken';
 
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet',];
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -24,6 +24,30 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
+const [bessie, , dolly, babe, little] = farmAnimals.split(' ');
+const { muppetName, color, song, job, partner } = muppet;
+const [red, orange, yellow, green, blue, indigo, violet,] = colors;
+const { 
+  nestedName, 
+  nestedColor, 
+  album: { 
+    theMuppetMovie: { song1, song2, song3, song4 } 
+  }, 
+  nestedJob, 
+  nestedPartner 
+} = nestedMuppet;
+
+const [, , , , , indg] = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [r, o, y, g, b, i, v] = colors;
+const blackAndWhite = 'cow'; // Manually assigned, as it's not in the array
+const black = 'sheep'; // Manually assigned
+const pink = 'pig'
+
+
+
+
 
 // Strings
 
